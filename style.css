@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2eae2;
+    padding: 16px;
+}
+
+.container{
+    width: 600px;
+    height: 100vh;
+    max-height: 450px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    
+}
+
+.content{
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 0px 10px 10px 0px;
+    padding: 32px;
+}
+
+.bitmap-img{
+    border-radius: 10px 0px 0px 10px;
+    background-image: url('assets/image.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.content h2{
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    color: #6c7289;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.content h1{
+    font-family: "Fraunces", serif;
+    font-size: 32px;
+    line-height: 32px;
+    color: #1C232B;
+    margin-bottom: 24px;
+}
+
+.content p{
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #6c7289;
+    margin-bottom:29px ;
+}
+
+.product-value{
+    display: flex;
+    align-items: center;
+    gap:19px;
+    margin-bottom: 30px;
+}
+
+.product-value strong{
+    font-family: "Fraunces", serif;
+    color: #3D8168;
+    font-size: 32px;
+    font-weight: 700;
+}
+.product-value span{
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    color: #6c7289;
+    text-decoration: line-through;
+}
+
+.content button{
+    display: flex;
+    gap:11px ;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    justify-content: center;
+    background-color: #3D8168;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition:0.3s;
+}
+
+.content button:hover{
+    background: #1A4032;
+
+}
+
+
+@media screen and (max-width:620px) {
+    main{
+        align-items: normal;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .content{
+        width: 100%;
+        border-radius: 0px 0px 10px 10px;
+    }
+    .bitmap-img{
+        width: 100%;
+        min-height: 240px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+}
